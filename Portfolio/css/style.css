@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'TitilliumWeb-Bold';
-  src: url(/font/TitilliumWeb-Bold.ttf);
+  src: url("font/TitilliumWeb-Bold.ttf");
 }
 
 @font-face {
   font-family: 'FuturaPTBook';
-  src: url(/font/FuturaPTBook.otf);
+  src: url("font/FuturaPTBook.otf");
 }
 
 body {
