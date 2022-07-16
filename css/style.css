@@ -172,14 +172,18 @@ section {
   margin: auto;
 }
 
-.card, .card-header, .card-body{
+.card {
+	border: solid 1px #e1e1e1;
+}
+
+.card-header, .card-body{
   border: none;
   background-color: transparent;
 }
 
 .mini-blue-bg {
   background-color: #2274A5;
-  height: 30vh;
+  height: 40vh;
 }
 
 .mini-center-element {
@@ -190,22 +194,15 @@ section {
   color:white;
 }
 
-.mini-center-element-2 {
-  margin: 0px;
-  position: relative;
-  top: 50%;
-  transform: translate(0,-50%);
-  color:black;
-}
-
 .footer {
-	position: relative; 
-	bottom: 0; 
-	left: 0; 
-	width: 100%; 
-	text-align: center;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
   background-color: #2274A5;
-  height: 7vh;
+  color: white;
+  text-align: center;
 }
 
 .skills {
@@ -355,15 +352,14 @@ section {
   width: 220px;
   height: 85px;
   margin-left: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 30px;
   font-weight: 400;
   font-size: 20px;
   position: relative;
   border-radius: 10px;
-  top: -20px;
+  top: -5px;
 }
-
 
 @media screen and (max-width: 1920px) {
 	.window-first-section {
@@ -374,13 +370,21 @@ section {
 		display: none;
 	}
 	
-	.window-second-section {
+	.window-third-section {
 		display: block;
 	}
 
-	.mobile-second-section {
+	.mobile-third-section {
 		display: none;
 	}	
+	
+	.window-fourth-section {
+		display: block;
+	}
+
+	.mobile-fourth-section {
+		display: none;
+	}
 	
 	.spacing {
 		display: block;
@@ -397,11 +401,19 @@ section {
 		display: block;
 	}
 	
-	.window-second-section {
+	.window-third-section {
 		display: none;
 	}
 
-	.mobile-second-section {
+	.mobile-third-section {
+		display: block;
+	}	
+	
+	.window-fourth-section {
+		display: none;
+	}
+
+	.mobile-fourth-section {
 		display: block;
 	}	
 	
@@ -445,5 +457,16 @@ section {
 	.project-border {
 		border: solid 1px #e1e1e1 !important;
 		padding: 10px;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+	
+	.card {
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
 	}
 }
