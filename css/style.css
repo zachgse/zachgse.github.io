@@ -30,6 +30,10 @@ p {
   font-size: 17px;
 }
 
+.text-white { 
+	color: white;
+}
+
 .navbar {
   border-bottom: 1px solid #e1e1e1;
   background-color: white !important;
@@ -64,7 +68,6 @@ p {
 }
 
 .center-element {
-  margin: 0px 0px 0px 50px;
   position: relative;
   top: 50%;
   transform: translate(0,-50%);
@@ -346,4 +349,44 @@ section {
   position: relative;
   border-radius: 10px;
   top: -20px;
+}
+
+.window-first-section {
+	display: block;
+}
+
+.mobile-first-section {
+	display: none;
+}
+
+@media screen and (max-width: 991px) {
+	.window-first-section {
+		display: none;
+	}
+	
+	.mobile-first-section{
+		display: block;
+	}
+	
+	.d-flex {
+		flex-direction: column;
+		text-align:center;
+	}
+
+	.job {
+		background-color: #2274A5;
+		width: 220px;
+		height: 85px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+		padding: 30px;
+		font-weight: 400;
+		font-size: 20px;
+		position: relative;
+		border-radius: 10px;
+		top: -20px;
+	}
+
+
 }
