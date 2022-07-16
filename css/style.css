@@ -83,7 +83,7 @@ p {
 .center-element {
   position: relative;
   top: 50%;
-  transform: translate(0,-50%);
+  transform: translate(10%,-50%);
   padding: 40px;
 }
 
@@ -374,9 +374,18 @@ section {
 		display: none;
 	}
 	
+	.window-second-section {
+		display: block;
+	}
+
+	.mobile-second-section {
+		display: none;
+	}	
+	
 	.spacing {
 		display: block;
 	}
+	
 }
 
 @media screen and (max-width: 991px) {
@@ -387,6 +396,14 @@ section {
 	.mobile-first-section{
 		display: block;
 	}
+	
+	.window-second-section {
+		display: none;
+	}
+
+	.mobile-second-section {
+		display: block;
+	}	
 	
 	.d-flex {
 		flex-direction: column;
@@ -418,11 +435,15 @@ section {
 	}	
 	
 	h1 {
-		font-size: 38px;
+		font-size: 40px;
 	}
 	
 	.navbar-brand {
 		font-size: 30px;
 	}
 
+	.project-border {
+		border: solid 1px #e1e1e1 !important;
+		padding: 10px;
+	}
 }
