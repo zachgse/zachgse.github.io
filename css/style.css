@@ -8,8 +8,21 @@
   src: url("font/FuturaPTBook.otf");
 }
 
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 body {
   overflow-x: hidden;
+margin: 0;
+  min-height: 100%;
 }
 
 h1, .navbar-brand, .nav-item {
