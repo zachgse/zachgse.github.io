@@ -351,12 +351,15 @@ section {
   top: -20px;
 }
 
-.window-first-section {
-	display: block;
-}
 
-.mobile-first-section {
-	display: none;
+@media screen and (max-width: 1920px) {
+	.window-first-section {
+		display: block;
+	}
+
+	.mobile-first-section {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -387,6 +390,5 @@ section {
 		border-radius: 10px;
 		top: -20px;
 	}
-
 
 }
