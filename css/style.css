@@ -196,8 +196,8 @@ section {
 }
 
 .skills {
-  position: relative;
-  transform: translate(-10%, -15%);
+  position: absolute;
+  transform: translate(0%, -15%);
 }
   
 .skills-bar {
@@ -389,6 +389,11 @@ section {
 		position: relative;
 		border-radius: 10px;
 		top: -20px;
+	}
+	
+	.skills {
+		position: absolute;
+		transform: translate(8%, 0%);
 	}
 
 }
