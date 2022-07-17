@@ -336,7 +336,7 @@ section {
   border: 18px solid;
 }
 
-.top::after {
+.top-arrow::after {
   border-color: transparent transparent #2274A5 transparent;
   top: -30px;
   left: 30px;
@@ -370,6 +370,14 @@ section {
 		display: none;
 	}
 	
+	.window-second-section {
+		display: block;
+	}
+
+	.mobile-second-section {
+		display: none;
+	}
+	
 	.window-third-section {
 		display: block;
 	}
@@ -385,6 +393,14 @@ section {
 	.mobile-fourth-section {
 		display: none;
 	}
+	
+	.window-fifth-section {
+		display: block;
+	}
+
+	.mobile-fifth-section {
+		display: none;
+	}	
 	
 	.spacing {
 		display: block;
@@ -401,6 +417,14 @@ section {
 		display: block;
 	}
 	
+	.window-second-section {
+		display: none;
+	}
+
+	.mobile-second-section {
+		display: block;
+	}	
+	
 	.window-third-section {
 		display: none;
 	}
@@ -416,6 +440,14 @@ section {
 	.mobile-fourth-section {
 		display: block;
 	}	
+	
+	.window-fifth-section {
+		display: none;
+	}
+
+	.mobile-fifth-section {
+		display: block;
+	}		
 	
 	.d-flex {
 		flex-direction: column;
