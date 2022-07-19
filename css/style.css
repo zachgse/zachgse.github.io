@@ -269,7 +269,7 @@ section {
   width: 40%;
 }
 .progress-line .c {
-  width: 70%;
+  width: 50%;
 }
 
 .bar .progress-line span::before {
@@ -312,7 +312,7 @@ section {
   content: "40%";
 }
 .progress-line .c::after {
-  content: "70%";
+  content: "50%";
 }
 
 /* ////........Media Query........//// */
