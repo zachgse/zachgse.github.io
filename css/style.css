@@ -361,6 +361,10 @@ section {
   top: -5px;
 }
 
+.experience {
+	display: flex;
+}
+
 @media screen and (max-width: 1920px) {
 	.window-first-section {
 		display: block;
@@ -405,6 +409,8 @@ section {
 	.spacing {
 		display: block;
 	}
+	
+	
 	
 }
 
