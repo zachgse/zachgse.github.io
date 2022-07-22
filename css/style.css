@@ -187,6 +187,7 @@ p {
 .mini-blue-bg {
 	background-color: #2274A5;
 	height: 50vh;
+	background-image: linear-gradient(to right, #7bb9de, #2274A5);
 }
 
 .mini-center-element {
