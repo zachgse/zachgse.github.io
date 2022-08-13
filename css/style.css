@@ -35,7 +35,6 @@ h1, .navbar-brand, .nav-item {
 
 p {
 	font-family: 'FuturaPTBook';
-	line-height: 1.5;
 }
 
 h1 {
@@ -107,7 +106,7 @@ p {
 	margin: 0px;
 	position: relative;
 	top: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(0%,-50%);
 }
 
 .text-white {
