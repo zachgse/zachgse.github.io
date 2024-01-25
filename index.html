@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="assets/img/logo.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="200">
+	<meta property="og:image:height" content="200">	
+	<meta property="og:title" content="Zach Estrella Portfolio"/>
+    <meta property="og:description" content="This is the portfolio of Zach Estrella"/>
+    <title>Zach Estrella | Portfolio</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+</head>
+<body>
+
+    <div id="preloader">
+        <img src="assets/img/logo.png" alt="" width="200">
+        <img src="assets/img/loading.gif" alt="" width="100">
+    </div>
+
+    <div id="main-content">
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="" class="navbar-brand-icon"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link link-active" id="link-home" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-about" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-certificate" href="#certificate">Certificates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-experience" href="#experience">Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-project" href="#project">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>     
+    
+        <button class="btn btn-outline btn-return-top d-none" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+        
+        <section id="home">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="mt-5" id="home-text-content">
+                            <p class="text-p muted fw-bold">Hello 👋🏻 , I am</p>
+                            <p class="primary" id="home-text-title">Zach <br/>Estrella</p>
+                            <p class="text-sub-title fw-bold">Software Developer</p>
+                            <p class="text-p muted w-50">I specialize in crafting impressive websites for your business and possess intermediate proficiency in back-end web development.</p>
+                            <a href="assets/pdf/Zach-Estrella-Resume.pdf" target="_blank">
+                                <button class="btn btn-outline-2 mb-3">Download CV <span><i class="fa-solid fa-download ms-2"></i></span></button>
+                            </a>                      
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/01.png" alt="Zach Estrella Picture" id="home-img-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="d-flex flex-lg-column flex-md-column flex-sm-row mt-5" id="home-icon-wrapper">
+                <div class="p-2">
+                    <a href="mailto:zachgabriel.estrella@gmail.com" target="_blank">
+                        <button class="btn btn-outline home-icon"><i class="fa-solid fa-envelope"></i></button>
+                    </a>           
+                </div>
+                <div class="p-2">
+                    <a href="https://www.facebook.com/zachgabriel.estrella/" target="_blank">
+                        <button class="btn btn-outline home-icon"><i class="fa-brands fa-facebook-f"></i></button>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="https://www.linkedin.com/in/zach-estrella/" target="_blank">
+                        <button class="btn btn-outline home-icon"><i class="fa-brands fa-linkedin-in"></i></button>
+                    </a>               
+                </div>
+                <div class="p-2">
+                    <a href="https://github.com/zachgse" target="_blank">
+                        <button class="btn btn-outline home-icon"><i class="fa-brands fa-github"></i></button>
+                    </a>              
+                </div>                 
+            </div>
+        </section>
+    
+        <section id="about" class="d-flex flex-column justify-content-center p-5">
+            <p class="text-title text-uppercase text-center mt-5">About Me</p>
+            
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-5 d-flex flex-column align-items-center mb-3">
+                        <p class="text-p muted auto" id="about-text-content">
+                            Possessing proficiency in programming languages, development tools, and methodologies, I have 
+                            showcased robust problem-solving skills and a firm grasp of software development principles 
+                            through both academic and personal projects. With a keen enthusiasm for learning and a readiness 
+                            to contribute, I am fully prepared to embark on a career in the dynamic field of software development.
+                        </p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                       <div class="vertical-line"></div>
+                    </div>
+                    <div class="col-lg-5 d-flex align-items-center mb-3">
+                        <div class="owl-carousel mx-auto my-auto" id="owl-carousel-1">
+                            <div class="item">
+                                <p class="text-p fw-bold mb-4">Current Tech Stack:</p>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/html.png" alt="HTML icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/css.png" alt="CSS icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/javascript.png" alt="Javascript icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/php.png" alt="PHP icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/python.png" alt="Python icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/java.png" alt="Java icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/csharp.png" alt="C Sharp icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="text-p fw-bold mb-4">Other Tech Skills:</p>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/sql.png" alt="SQL icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/git.png" alt="Github icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/jira.png" alt="Jira icon" class="about-icon mt-3">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/microsoft.png" alt="Microsoft Office icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/photoshop.png" alt="Adobe Photoshop icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar w-100 d-flex flex-inline mb-3">
+                                    <div class="me-4">
+                                        <img src="assets/img/figma.png" alt="Figma icon" class="about-icon">
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-outline" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <section id="certificate" class="d-flex flex-column justify-content-center p-5">
+            <br/><br/>
+            <p class="text-title text-uppercase text-center mt-5">Certificates</p>
+            <br/><br/>
+            <div class="container mt-5">
+                <div class="owl-carousel mx-auto my-auto" id="owl-carousel-2">
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="assets/certificates/aws-cloud-essentials-1.png" alt="AWS Certificate" class="certificate-img-content">
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="text-p fw-bold mt-3">AWS Knowledge: Cloud Essentials</p>
+                                <p class="muted"><i>Date Acquired: December 2023</i></p>
+                                <a href="assets/certificates/aws-cloud-essentials-1.png" target="_blank">
+                                    <button class="btn btn-outline-2">View Certificate<span><i class="fa-solid fa-arrow-right ms-2"></i></span></button>
+                                </a>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="assets/certificates/csharp-cert-1.png" alt="C# Certificate" class="certificate-img-content">
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="text-p fw-bold mt-3">Foundational C# with Microsoft</p>
+                                <p class="muted"><i>Date Acquired: November 2023</i></p>
+                                <a href="assets/certificates/csharp-cert-1.png" target="_blank">
+                                    <button class="btn btn-outline-2">View Certificate<span><i class="fa-solid fa-arrow-right ms-2"></i></span></button>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="assets/certificates/python-cert-1.png" alt="Python 1 Certificate" class="certificate-img-content">
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="text-p fw-bold mt-3">Python Essentials 1</p>
+                                <p class="muted"><i>Date Acquired: December 2023</i></p>
+                                <a href="assets/certificates/python-cert-1.png" target="_blank">
+                                    <button class="btn btn-outline-2">View Certificate<span><i class="fa-solid fa-arrow-right ms-2"></i></span></button>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="assets/certificates/python-cert-2.png" alt="Python 2 Certificate" class="certificate-img-content">
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="text-p fw-bold mt-3">Python Essentials 2</p>
+                                <p class="muted"><i>Date Acquired: December 2023</i></p>
+                                <a href="assets/certificates/python-cert-2.png" target="_blank">
+                                    <button class="btn btn-outline-2">View Certificate<span><i class="fa-solid fa-arrow-right ms-2"></i></span></button>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="assets/certificates/java-cert-1.png" alt="Jasva 1 Certificate" class="certificate-img-content">
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="text-p fw-bold mt-3">Java Basic Certificate</p>
+                                <p class="muted"><i>Date Acquired: December 2023</i></p>
+                                <a href="assets/certificates/java-cert-1.png" target="_blank">
+                                    <button class="btn btn-outline-2">View Certificate<span><i class="fa-solid fa-arrow-right ms-2"></i></span></button>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="experience" class="d-flex flex-column justify-content-center p-5">
+            <br/><br/>
+            <p class="text-title text-uppercase text-center mt-5">Experience</p>
+    
+            <div class="container mt-5">
+                <div class="timeline">
+                    <div class="timeline-container timeline-left mb-3">
+                        <p class="text-p fw-bold text-center">De La Salle - College of <br>Saint Benilde</p>
+                        <p class="muted fw-bold text-center"><i>Bachelor of Science in Information Systems<br/>(August 2018 - October 2022)</i></p>
+                        <p class="muted text-justify">
+                            I graduated from De La Salle - College of Saint Benilde with a Bachelor of Science in Information Systems. 
+                            I have acquired the necessary skills, knowledge, and theories to navigate the field of Information Technology.
+                        </p>
+                    </div>
+                    <div class="timeline-container timeline-right mb-3">
+                        <p class="text-p fw-bold text-center">Freelancing</p>
+                        <p class="muted fw-bold text-center"><i>Web Developer (2020 - Present)</i></p>
+                        <p class="muted text-justify">
+                            Due to the COVID-19 pandemic in 2020, I ventured into freelancing as a hobby. My projects mainly 
+                            involved capstones and small tasks for my college batchmates. Consequently, I gained exposure to 
+                            various web development styles, ranging from static websites to fully functional systems.
+                        </p>
+                    </div>   
+                    <div class="timeline-container timeline-left mb-3">
+                        <p class="text-p fw-bold text-center">Philippine Micro-Matrix <br/>Technology Inc.</p>
+                        <p class="muted fw-bold text-center"><i>Web Developer (May 2022 - Present)</i></p>
+                        <p class="muted text-justify">
+                            I was an intern from May to August 2022, and fortunately, I was absorbed by the company as a Web Developer. 
+                            Throughout my tenure up to the present, I have been actively involved in developing web applications using 
+                            PHP and Laravel. I have gained valuable insights into core concepts, best practices, and advanced functionalities 
+                            related to website development. 
+                        </p>
+                    </div>	           
+                </div>
+            </div>
+        </section>
+    
+        <section id="project" class="d-flex flex-column justify-content-center p-5">
+            <br/><br/>
+            <p class="text-title text-uppercase text-center mt-5">Projects</p>
+    
+            <div class="container mt-5">
+    
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-2 text-center">
+                                <img src="assets/img/csharp.png" alt="C# logo" width="100">
+                            </div>
+                            <div class="col-lg-10 d-flex flex-column align-items-center mt-3">
+                                <div>
+                                    <p class="text-p project-text-content fw-bold">Simple RPG Game</p>
+                                    <div class="d-flex flex-wrap project-text-tag-content-wrapper align-items-center">
+                                        <div class="project-text-tag-content">C#</div>
+                                        <div class="project-text-tag-content">Window <br/> Forms</div>
+                                    </div>
+                                    <p class="text-justify muted mt-2">
+                                        This C#-based text adventure RPG game is designed with simplicity in mind. It incorporates 
+                                        fundamental Object-Oriented Programming concepts, including inheritance, loops, and other 
+                                        core principles inherent to OOP.
+                                    </p>
+                                    <div class="project-button-wrapper">
+                                        <a href="assets/pdf/csharp-rpg-game.pdf" target="_blank">
+                                            <button class="btn btn-outline-2 mb-3">View project <span><i class="fa-solid fa-arrow-right ms-2"></i></span></button>                                                               
+                                        </a> 
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-2 text-center">
+                                <img src="assets/img/python.png" alt="Python logo" width="100">
+                            </div>
+                            <div class="col-lg-10 d-flex flex-column align-items-center mt-3">
+                                <div>
+                                    <p class="text-p project-text-content fw-bold">Student Management System</p>
+                                    <div class="d-flex flex-wrap project-text-tag-content-wrapper">
+                                        <div class="project-text-tag-content">Python</div>
+                                        <div class="project-text-tag-content">MySQL</div>
+                                    </div>
+                                    <p class="text-justify muted mt-2">
+                                        This student management system, built on Python, provides users with a range of operations, 
+                                        including the creation, viewing, updating, and deletion of student records within the database.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-2 text-center">
+                                <img src="assets/img/java.png" alt="Java logo" width="100">
+                            </div>
+                            <div class="col-lg-10 d-flex flex-column align-items-center mt-3">
+                                <div>
+                                    <p class="text-p project-text-content fw-bold">Sales and Inventory Management System</p>
+                                    <div class="d-flex flex-wrap project-text-tag-content-wrapper">
+                                        <div class="project-text-tag-content">Java</div>
+                                        <div class="project-text-tag-content">JSP</div>
+                                        <div class="project-text-tag-content">Servlet</div>
+                                        <div class="project-text-tag-content">PostgreSQL</div>
+                                    </div>
+                                    <p class="text-justify muted mt-2">
+                                        This Sales & Inventory Management System, developed in Java, empowers users to input their 
+                                        inventory stocks, monitor the total amount post each transaction, and meticulously record 
+                                        monthly sales. This comprehensive approach enables the systematic tracking of overall net 
+                                        profit/loss, providing a robust solution for effective sales and inventory management.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-2 text-center">
+                                <img src="assets/img/tails-and-wags.png" alt="Tails and Wags logo" width="100">
+                            </div>
+                            <div class="col-lg-10 d-flex flex-column align-items-center mt-3">
+                                <div>
+                                    <p class="text-p project-text-content fw-bold">Tails and Wags</p>
+                                    <div class="d-flex flex-wrap project-text-tag-content-wrapper">
+                                        <div class="project-text-tag-content">HTML</div>
+                                        <div class="project-text-tag-content">CSS</div>
+                                        <div class="project-text-tag-content">Javascript</div>
+                                        <div class="project-text-tag-content">PHP</div>
+                                        <div class="project-text-tag-content">Laravel</div>
+                                        <div class="project-text-tag-content">MySQL</div>
+                                    </div>
+                                    <p class="text-justify muted mt-2">
+                                        Tails and Wags presents itself as a veterinary appointment booking system facilitating seamless 
+                                        connections between users and clinics. The system incorporates fundamental CRUD functionalities, 
+                                        allowing users (patients) to schedule their appointments with the clinics registered within the 
+                                        platform. To ensure secure and smooth transactions, the system is integrated with the Paymonggo 
+                                        API, serving as a reliable payment gateway for all financial transactions.
+                                    </p>
+                                    <div class="project-button-wrapper">
+                                        <a href="assets/pdf/tails-and-wags.pdf" target="_blank">
+                                            <button class="btn btn-outline-2 mb-3">View project <span><i class="fa-solid fa-arrow-right ms-2"></i></span></button>                                                               
+                                        </a> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-2 text-center">
+                                <img src="assets/img/filospace.png" alt="Filospace logo">
+                            </div>
+                            <div class="col-lg-10 d-flex flex-column align-items-center mt-3">
+                                <div>
+                                    <p class="text-p project-text-content fw-bold">Filospace</p>
+                                    <div class="d-flex flex-wrap project-text-tag-content-wrapper">
+                                        <div class="project-text-tag-content">HTML</div>
+                                        <div class="project-text-tag-content">CSS</div>
+                                        <div class="project-text-tag-content">Javascript</div>
+                                        <div class="project-text-tag-content">PHP</div>
+                                        <div class="project-text-tag-content">Laravel</div>
+                                        <div class="project-text-tag-content">MySQL</div>
+                                    </div>
+                                    <p class="text-justify muted mt-2">
+                                        FiloSpace stands as a straightforward photo-stock management system, offering users the capability 
+                                        to effortlessly download their preferred images. The system, overseen and curated by the administrator, 
+                                        provides and maintains a collection of images. It incorporates basic CRUD (Create, Read, Update, Delete)
+                                         functionalities exclusively accessible through the administrator side, ensuring efficient control and 
+                                         management of the system's photo-stock.
+                                    </p>
+                                    <div class="project-button-wrapper">
+                                        <a href="assets/pdf/filospace.pdf" target="_blank">
+                                            <button class="btn btn-outline-2 mb-3">View project <span><i class="fa-solid fa-arrow-right ms-2"></i></span></button>                                                               
+                                        </a> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-2 text-center">
+                                <img src="assets/img/mentalite.png" alt="Mentalit-E logo" width="150">
+                            </div>
+                            <div class="col-lg-10 d-flex flex-column align-items-center mt-3">
+                                <div>
+                                    <p class="text-p project-text-content fw-bold">Mentalit-E</p>
+                                    <div class="d-flex flex-wrap project-text-tag-content-wrapper">
+                                        <div class="project-text-tag-content">HTML</div>
+                                        <div class="project-text-tag-content">CSS</div>
+                                        <div class="project-text-tag-content">Javascript</div>
+                                        <div class="project-text-tag-content">PHP</div>
+                                        <div class="project-text-tag-content">Laravel</div>
+                                        <div class="project-text-tag-content">MySQL</div>
+                                    </div>
+                                    <p class="text-justify muted mt-2">
+                                        Our capstone project, Mentalit-E, is an online platform dedicated to mental health. It serves 
+                                        both patients and clinics (administrators and employees) by enabling users to conveniently schedule 
+                                        consultations with their chosen clinic within the system. Additional features include a community forum 
+                                        for user interaction, a rating and booking system, an integrated chatbot, a ticketing system for 
+                                        customer support and inquiries, and system maintenance capabilities on the administrator side.
+                                    </p>
+                                    <div class="project-button-wrapper">
+                                        <a href="assets/pdf/mentalite.pdf" target="_blank">
+                                            <button class="btn btn-outline-2 mb-3">View project <span><i class="fa-solid fa-arrow-right ms-2"></i></span></button>                                                               
+                                        </a> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    
+        <footer id="footer">
+            <img src="assets/img/logo.png" alt="Zach Estrella Logo" width="200">
+            <p class="text-sub-title fw-bold">"Grind with a smile, enjoy the journey,<br/> and make every hustle a step <br/>closer to your dreams."</p>
+            <div class="d-flex flex-row my-5">
+                <div class="p-2">
+                    <a href="mailto:zachgabriel.estrella@gmail.com" target="_blank">
+                        <button class="btn btn-footer home-icon"><i class="fa-solid fa-envelope"></i></button>
+                    </a>           
+                </div>
+                <div class="p-2">
+                    <a href="https://www.facebook.com/zachgabriel.estrella/" target="_blank">
+                        <button class="btn btn-footer home-icon"><i class="fa-brands fa-facebook-f"></i></button>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="https://www.linkedin.com/in/zach-estrella/" target="_blank">
+                        <button class="btn btn-footer home-icon"><i class="fa-brands fa-linkedin-in"></i></button>
+                    </a>               
+                </div>
+                <div class="p-2">
+                    <a href="https://github.com/zachgse" target="_blank">
+                        <button class="btn btn-footer home-icon"><i class="fa-brands fa-github"></i></button>
+                    </a>              
+                </div>                 
+            </div>
+            <p class="text-footer">asd</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
