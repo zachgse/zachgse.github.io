@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Oswald&display=swap');
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url("../font/RobotoSlab-Regular.ttf") format('truetype');
+}
 
 :root {
     --primary-color: #10a4ea;
@@ -7,7 +10,7 @@
 }
 
 * {
-    font-family: 'Roboto Slab', 'Helvetica', sans-serif;
+    font-family: 'RobotoSlab', 'Cambria', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
