@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'RobotoSlab';
-    src: url("../../assets/font/RobotoSlab-Regular.ttf") format('truetype');
+    font-family: 'Roboto Slab';
+    src: url("../font/RobotoSlab-Regular.ttf") format('truetype');
 }
 
 :root {
@@ -10,7 +10,7 @@
 }
 
 * {
-    font-family: 'RobotoSlab', 'Cambria', sans-serif;
+    font-family: 'Roboto Slab', 'Cambria', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
