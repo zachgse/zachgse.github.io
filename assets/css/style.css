@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'RobotoSlab';
-    src: url("../font/RobotoSlab-Regular.ttf") format('truetype');
+    src: url("../../assets/font/RobotoSlab-Regular.ttf") format('truetype');
 }
 
 :root {
