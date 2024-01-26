@@ -4,13 +4,8 @@
     --circle-shape: 50%;
 }
 
-@font-face {
-	font-family: 'RobotoSlab';
-	src: url("../font/RobotoSlab-Regular.ttf");
-}
-
 * {
-    font-family: 'RobotoSlab', 'Helvetica', sans-serif;
+    font-family: 'Roboto Slab', 'Helvetica', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -438,7 +433,7 @@ footer {
 @media only screen and (max-width: 991px) {
     .navbar-collapse {
         height: 100vh !important;
-        width: 100%;
+        width: 100% !important;
         z-index: 1000;
         display: flex;
         flex-direction: column;
@@ -459,6 +454,7 @@ footer {
 
     .navbar-nav .nav-link {
         display: block;
+        width: 100%;
     }
 
     #home-text-content {
@@ -483,6 +479,11 @@ footer {
 
     #home-icon-wrapper {
         margin-bottom: 50px;
+        margin-left: 5px;
+    }
+
+    .btn-return-top {
+        margin-right: 15px;
     }
 
     .vertical-line {
