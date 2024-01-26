@@ -481,6 +481,10 @@ footer {
         margin-top: 10px;
     }
 
+    #home-icon-wrapper {
+        margin-bottom: 50px;
+    }
+
     .vertical-line {
         display: none;
     }
