@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
 @font-face {
     font-family: 'Roboto Slab';
-    src: url("../font/RobotoSlab-Regular.ttf") format('truetype');
+    src: url("https://zachgse.github.io/assets/font/RobotoSlab-Regular.tff") format('truetype');
 }
 
 :root {
