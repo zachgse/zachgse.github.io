@@ -1,5 +1,5 @@
 /* global $ */
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import '../assets/css/SectionAbout.css'
@@ -19,20 +19,11 @@ import iconFigma from '../assets/img/figma.png';
 
 function SectionAbout() {
     const [refInViewText, inViewText] = useInView({
-        riggerOnce: true,
+        triggerOnce: true,
     });
-    const [refInViewCarousel, inViewCarousel] = useInView({
-        riggerOnce: true,
+    const [refInViewIcons, inViewIcon] = useInView({
+        triggerOnce: true,
     });
-
-    useEffect(() => {
-      $("#owl-carousel-1").owlCarousel({
-        items: 1,
-        loop: true,
-        nav: true,
-        dots: false,
-      });
-    }, []);
 
     return (
         <>
@@ -58,125 +49,52 @@ function SectionAbout() {
                         <div className="col-lg-2 text-center">
                             <div className="vertical-line"></div>
                         </div>
-                        <div className="col-lg-5 d-flex align-items-center mb-3" ref={refInViewCarousel}>
-                            <motion.div
-                                className="owl-carousel mx-auto my-auto"
-                                id="owl-carousel-1"
+                        <div className="col-lg-5 d-flex flex-column mb-3" ref={refInViewIcons}>  
+                            <p className="text-p fw-bold mb-4">Current Tech Stack:</p>                    
+                            <motion.div className="d-flex flex-wrap"
                                 initial = {{opacity : 0}}
-                                animate = {{opacity : inViewCarousel ? 1 :0}}
-                                transition={{ duration: 2}}
-                            >
-                                <div className="item">
-                                    <p className="text-p fw-bold mb-4">Current Tech Stack:</p>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconHtml} alt="HTML icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">                     
-                                            <div className="progress-bar progress-80 bg-outline" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconCss} alt="CSS icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-80 bg-outline" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconJs} alt="Javascript icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-30 bg-outline" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconPhp} alt="PHP icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-70 bg-outline" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconPython} alt="Python icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-50 bg-outline" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconJava} alt="Java icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-50 bg-outline" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconCsharp} alt="C Sharp icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-30 bg-outline" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
-                                        </div>
-                                    </div>
+                                animate = {{opacity : inViewIcon ? 1 :0}}
+                                transition={{ duration: 2}}>
+                                <div>
+                                    <img src={iconHtml} alt="HTML icon" className="about-icon"/>
                                 </div>
-                                <div className="item">
-                                    <p className="text-p fw-bold mb-4">Other Tech Skills:</p>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconSql} alt="SQL icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-70 bg-outline" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconGit} alt="Github icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-70 bg-outline" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconJira} alt="Jira icon" className="about-icon mt-3"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-70 bg-outline" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconMicrosoft} alt="Microsoft Office icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-60 bg-outline" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconPhotoshop} alt="Adobe Photoshop icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-30 bg-outline" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
-                                        </div>
-                                    </div>
-                                    <div className="skill-bar w-100 d-flex flex-inline mb-3">
-                                        <div className="me-4">
-                                            <img src={iconFigma} alt="Figma icon" className="about-icon"/>
-                                        </div>
-                                        <div className="progress mt-3">
-                                            <div className="progress-bar progress-30 bg-outline" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
-                                        </div>
-                                    </div>
-                                </div>  
-                            </motion.div>        
+                                <div>
+                                    <img src={iconCss} alt="CSS icon" className="about-icon"/>
+                                </div>
+                                <div>
+                                    <img src={iconJs} alt="Javascript icon" className="about-icon"/>
+                                </div>
+                                <div>
+                                    <img src={iconPhp} alt="PHP icon" className="about-icon"/>
+                                </div>
+                                <div>
+                                    <img src={iconPython} alt="Python icon" className="about-icon"/>
+                                </div>
+                                <div>
+                                    <img src={iconJava} alt="Java icon" className="about-icon"/>
+                                </div>
+                                <div>
+                                    <img src={iconCsharp} alt="C# icon" className="about-icon"/>
+                                </div>
+                                <div>
+                                    <img src={iconSql} alt="SQL icon" className="about-icon"/>
+                                </div>
+                                <div>
+                                    <img src={iconGit} alt="Git icon" className="about-icon"/>
+                                </div>
+                                <div class="mt-4">
+                                    <img src={iconJira} alt="Jira icon" className="about-icon"/>
+                                </div>
+                                <div>
+                                    <img src={iconMicrosoft} alt="Microsoft icon" className="about-icon"/>
+                                </div>
+                                <div>
+                                    <img src={iconPhotoshop} alt="Photoshop icon" className="about-icon"/>
+                                </div>
+                                <div>
+                                    <img src={iconFigma} alt="Figma icon" className="about-icon"/>
+                                </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>

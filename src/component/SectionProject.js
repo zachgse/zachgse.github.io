@@ -58,7 +58,7 @@ function SectionProject() {
                                                 <div className="project-text-tag-content">Window <br/> Forms</div>
                                             </div>
                                             <p className="text-justify muted mt-2">
-                                                This C#-based text adventure RPG game is designed with simplicity in mind. It incorporates 
+                                                C#-based text adventure RPG game is designed with simplicity in mind. It incorporates 
                                                 fundamental Object-Oriented Programming concepts, including inheritance, loops, and other 
                                                 core principles inherent to OOP.
                                             </p>
@@ -92,7 +92,7 @@ function SectionProject() {
                                                 <div className="project-text-tag-content">MySQL</div>
                                             </div>
                                             <p className="text-justify muted mt-2">
-                                                This student management system, built on Python, provides users with a range of operations, 
+                                                Student management system, built on Python, provides users with a range of operations, 
                                                 including the creation, viewing, updating, and deletion of student records within the database.
                                             </p>
                                         </div>
@@ -122,7 +122,7 @@ function SectionProject() {
                                                 <div className="project-text-tag-content">PostgreSQL</div>
                                             </div>
                                             <p className="text-justify muted mt-2">
-                                                This Sales & Inventory Management System, developed in Java, empowers users to input their 
+                                                Sales & Inventory Management System, developed in Java, empowers users to input their 
                                                 inventory stocks, monitor the total amount post each transaction, and meticulously record 
                                                 monthly sales. This comprehensive approach enables the systematic tracking of overall net 
                                                 profit/loss, providing a robust solution for effective sales and inventory management.

@@ -1,7 +1,14 @@
 import React,{useEffect} from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useMediaQuery } from '@react-hook/media-query';
 import logo from '../assets/img/logo.png'
 
 function Navbar() {
+    const [refInView, inView] = useInView({
+        triggerOnce: true,
+    });
+    const isDesktop = useMediaQuery('(min-width: 992px)');
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
@@ -74,30 +81,60 @@ function Navbar() {
     
     return (
         <>
-            <nav className="navbar fixed-top navbar-expand-lg">
+            <nav className="navbar fixed-top navbar-expand-lg" ref={refInView}>
                 <div className="container">
-                    <a className="navbar-brand" href="#"><img src={logo} alt="" className="navbar-brand-icon"/></a>
+                    <motion.div
+                        initial={{opacity:0}}
+                        animate={inView? {opacity:1} : {opacity:0}}
+                        transition={{duration:2.5}}>
+                        <a className="navbar-brand" href="#"><img src={logo} alt="" className="navbar-brand-icon"/></a>
+                    </motion.div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="fa fa-bars"></i>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link link-active" id="link-home" href="#home">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" id="link-about" href="#about">About</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" id="link-certificate" href="#certificate">Certificates</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" id="link-experience" href="#experience">Experiences</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" id="link-project" href="#project">Projects</a>
-                            </li>
+                            <motion.div
+                                initial={isDesktop? {opacity:0,x:0,y:200}: {opacity:1,x:0,y:0}}
+                                animate={inView? {opacity:1,x:0,y:0} : {opacity:0,x:0,y:200}}
+                                transition={{duration:isDesktop?2.5:0}}>
+                                <li className="nav-item">
+                                    <a className="nav-link link-active" id="link-home" href="#home">Home</a>
+                                </li>
+                            </motion.div>
+                            <motion.div
+                                initial={isDesktop? {opacity:0,x:0,y:200}: {opacity:1,x:0,y:0}}
+                                animate={inView? {opacity:1,x:0,y:0} : {opacity:0,x:0,y:200}}
+                                transition={{duration:isDesktop?2:0}}>
+                                <li className="nav-item">
+                                    <a className="nav-link" id="link-about" href="#about">About</a>
+                                </li>
+                            </motion.div>
+                            <motion.div
+                                initial={isDesktop? {opacity:0,x:0,y:200}: {opacity:1,x:0,y:0}}
+                                animate={inView? {opacity:1,x:0,y:0} : {opacity:0,x:0,y:200}}
+                                transition={{duration:isDesktop?1.5:0}}>
+                                <li className="nav-item">
+                                    <a className="nav-link" id="link-certificate" href="#certificate">Certificates</a>
+                                </li>
+                            </motion.div>
+                            <motion.div
+                                initial={isDesktop? {opacity:0,x:0,y:200}: {opacity:1,x:0,y:0}}
+                                animate={inView? {opacity:1,x:0,y:0} : {opacity:0,x:0,y:200}}
+                                transition={{duration:isDesktop?1:0}}>
+                                <li className="nav-item">
+                                    <a className="nav-link" id="link-experience" href="#experience">Experiences</a>
+                                </li>
+                            </motion.div>
+                            <motion.div
+                                initial={isDesktop? {opacity:0,x:0,y:200}: {opacity:1,x:0,y:0}}
+                                animate={inView? {opacity:1,x:0,y:0} : {opacity:0,x:0,y:200}}
+                                transition={{duration:isDesktop?0.5:0}}>
+                                <li className="nav-item">
+                                    <a className="nav-link" id="link-project" href="#project">Projects</a>
+                                </li>
+                            </motion.div>
                         </ul>
                     </div>
                 </div>

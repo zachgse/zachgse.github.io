@@ -272,7 +272,9 @@ section {
 }
 
 .about-icon {
-    width: 3.125em !important;
+    width: 5em !important;
+    margin: 0.5em;
+    text-align: center;
 }
 
 .owl-carousel .owl-nav {
